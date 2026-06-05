@@ -9,6 +9,8 @@ int main() {
    float area1;
    float pib1;
    int pontosTuristicos1;
+   float densidadepopulacional1;
+   float pibbercapital1;
 
 // --- VARIAVEIS DA CARTA 2 ---  
 char estado2;
@@ -18,6 +20,8 @@ char estado2;
    float area2;
    float pib2;
    int pontosTuristicos2;
+   float densidadepopulacional2;
+   float pibbercapital2;
 
   
   //--- CADASTRO DA CARTA 1 ---
