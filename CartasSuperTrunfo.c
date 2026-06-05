@@ -49,8 +49,8 @@ char estado2;
   scanf("%d", &pontosTuristicos1);  
 
   //Calculo da carta 1
-  densidadepopulacional1 = populacao1 / area1;
-  pibpercapital1 = (pib1 * 1000000000) / populacao1;
+  densidadepopulacional1 = (float)populacao1 / area1;
+  pibpercapital1 = (pib1 * 1000000000) / (float)populacao1;
 
   
   //--- CADASTRO DA CARTA 2 ---
@@ -78,8 +78,8 @@ char estado2;
   scanf("%d", &pontosTuristicos2); 
 
   //Calculo carta 2
-  densidadepopulacional2 =populacao2 / area2;
-  pibpercapital2 = (pib2 * 100000000) / populacao2;
+  densidadepopulacional2 = (float)populacao2 / area2;
+  pibpercapital2 = (pib2 * 100000000) / (float)populacao2;
 
   
  //--- EXIBIÇÃO DOS DADOS ----
@@ -92,8 +92,8 @@ printf("Numero de Habitantes: %d\n", populacao1);
 printf("Quilômetros quadrados: %.2f\n", area1);
 printf("Quantidade de PIB em reais: %.2f\n", pib1);
 printf("Numero de pontos turisticos: %d\n",pontosTuristicos1 ); 
-printf("Densidade populacional: %.2f\n", densidadepopulacional1 );
-printf("Quantidade de Pib Per Capital: %.2f\n", pibpercapital1 );
+printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional1 );
+printf("Quantidade de Pib Per Capital: %.2f reais\n", pibpercapital1 );
 
   
 printf("\n------------------------------\n");
@@ -105,8 +105,8 @@ printf("Numero de Habitantes: %d\n", populacao2);
 printf("Quilômetros quadrados: %.2f\n", area2);
 printf("Quantidade de PIB em reais: %.2f\n", pib2);
 printf("Numero de pontos turisticos: %d\n",pontosTuristicos2 );
-printf("Densidade populacional: %,2f\n", densidadepopulacional2 );
-printf("Quantidade de Pib Per Capital: %.2f\n", pibpercapital2)
+printf("Densidade populacional: %,2f hab/km²\n", densidadepopulacional2 );
+printf("Quantidade de Pib Per Capital: %.2f reais\n", pibpercapital2)
 
   return 0;
 } 
